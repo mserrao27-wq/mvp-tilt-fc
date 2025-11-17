@@ -76,92 +76,21 @@ export const TEAMS: Team[] = [
   }
 ];
 
-// Avatares temáticos por time - Mini Craques (jogadores de futebol)
+// Avatares temáticos por time
 export const TEAM_AVATARS: Record<string, string[]> = {
-  flamengo: ['⚽', '🥅', '🏃', '🦵', '🧤'],
-  palmeiras: ['⚽', '🥅', '🏃', '🦵', '🧤'],
-  corinthians: ['⚽', '🥅', '🏃', '🦵', '🧤'],
-  'sao-paulo': ['⚽', '🥅', '🏃', '🦵', '🧤'],
-  santos: ['⚽', '🥅', '🏃', '🦵', '🧤'],
-  gremio: ['⚽', '🥅', '🏃', '🦵', '🧤'],
-  internacional: ['⚽', '🥅', '🏃', '🦵', '🧤'],
-  'atletico-mg': ['⚽', '🥅', '🏃', '🦵', '🧤'],
-  cruzeiro: ['⚽', '🥅', '🏃', '🦵', '🧤'],
-  botafogo: ['⚽', '🥅', '🏃', '🦵', '🧤'],
-  vasco: ['⚽', '🥅', '🏃', '🦵', '🧤'],
-  fluminense: ['⚽', '🥅', '🏃', '🦵', '🧤']
+  flamengo: ['🦅', '🔥', '👑', '⚡', '🏆'],
+  palmeiras: ['🐷', '🌴', '💚', '🏆', '⭐'],
+  corinthians: ['🦅', '⚔️', '👊', '🏆', '💪'],
+  'sao-paulo': ['🔺', '👑', '🏆', '⚡', '💫'],
+  santos: ['🐟', '⚓', '👑', '⚽', '🏆'],
+  gremio: ['🦅', '⚡', '💙', '🏆', '⭐'],
+  internacional: ['🦅', '❤️', '🔥', '🏆', '💪'],
+  'atletico-mg': ['🐓', '⚡', '🏆', '💪', '🔥'],
+  cruzeiro: ['🦊', '💙', '⭐', '🏆', '👑'],
+  botafogo: ['⭐', '🔥', '🏆', '⚡', '💪'],
+  vasco: ['⚓', '🚢', '⚡', '🏆', '💪'],
+  fluminense: ['💚', '❤️', '⚡', '🏆', '👑']
 };
-
-// Avatares de jogadores reais gerados por IA (simulação)
-export const AI_PLAYER_AVATARS: Record<string, string[]> = {
-  flamengo: [
-    'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&h=200&fit=crop&q=80'
-  ],
-  palmeiras: [
-    'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&h=200&fit=crop&q=80'
-  ],
-  corinthians: [
-    'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&h=200&fit=crop&q=80'
-  ],
-  'sao-paulo': [
-    'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&h=200&fit=crop&q=80'
-  ],
-  santos: [
-    'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&h=200&fit=crop&q=80'
-  ],
-  gremio: [
-    'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&h=200&fit=crop&q=80'
-  ],
-  internacional: [
-    'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&h=200&fit=crop&q=80'
-  ],
-  'atletico-mg': [
-    'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&h=200&fit=crop&q=80'
-  ],
-  cruzeiro: [
-    'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&h=200&fit=crop&q=80'
-  ],
-  botafogo: [
-    'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&h=200&fit=crop&q=80'
-  ],
-  vasco: [
-    'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&h=200&fit=crop&q=80'
-  ],
-  fluminense: [
-    'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&h=200&fit=crop&q=80',
-    'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&h=200&fit=crop&q=80'
-  ]
-};
-
-// E-mails autorizados para acesso ao painel Admin
-export const ADMIN_EMAILS = [
-  'admin@tiltfc.com',
-  'moderador@tiltfc.com',
-  'suporte@tiltfc.com'
-];
 
 // Memes de exemplo (simulação)
 export const SAMPLE_MEMES = [

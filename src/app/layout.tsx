@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Criado com a Lasy",
-  description: "Projeto criado com Lasy AI",
+  title: "Tilt FC - Zoeira Respeitosa",
+  description: "Interação divertida e respeitosa entre torcedores de diferentes times",
 };
 
 export default function RootLayout({

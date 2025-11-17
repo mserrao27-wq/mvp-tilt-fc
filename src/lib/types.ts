@@ -1,4 +1,4 @@
-// Tipos do aplicativo Tilt FC
+// Tipos do Tilt FC
 
 export interface Team {
   id: string;
@@ -13,28 +13,35 @@ export interface Team {
 export interface User {
   id: string;
   name: string;
-  fullName: string;
-  age: number;
   email: string;
-  phone: string;
+  username: string;
   team: Team;
   avatar: string;
-  profilePhoto?: string; // URL da foto de perfil
-  isAdmin?: boolean;
-  emailVerified?: boolean;
-  createdAt: Date;
+  points: number;
+  bio?: string;
+  phone?: string;
 }
 
 export interface Meme {
   id: string;
   userId: string;
   userName: string;
-  userTeam: string;
-  userAvatar: string;
-  caption: string;
+  userTeam: Team;
   imageUrl: string;
+  caption: string;
   votes: number;
   timestamp: Date;
+  voters: string[];
+  dislikers?: string[];
+}
+
+export interface Battle {
+  id: string;
+  team1: Team;
+  team2: Team;
+  votes1: number;
+  votes2: number;
+  voters: string[];
   comments: Comment[];
 }
 
@@ -42,32 +49,7 @@ export interface Comment {
   id: string;
   userId: string;
   userName: string;
-  userAvatar: string;
+  userTeam: Team;
   text: string;
   timestamp: Date;
-}
-
-export interface Battle {
-  id: string;
-  team1: Team;
-  team2: Team;
-  votes: {
-    team1: number;
-    team2: number;
-  };
-  comments: Comment[];
-  status: 'active' | 'finished';
-}
-
-export interface RegisterForm {
-  fullName: string;
-  age: string;
-  email: string;
-  phone: string;
-  password: string;
-  confirmPassword: string;
-  team: Team | null;
-  avatarType: 'emoji' | 'photo' | 'ai';
-  selectedAvatar: string;
-  profilePhoto?: string;
 }
